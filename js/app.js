@@ -18,9 +18,11 @@ function main(window) {
   const multipliedOutputEl = document.getElementById('multiplied-output');
   const errorTextEl = document.getElementById('error-text');
 
-  const factor = getFactor();
+  let factor = getFactor();
 
   startStopButton.addEventListener('click', function() {
+    factor = getFactor();
+
     if (isRunning) {
       // stop
       clearTimer();
