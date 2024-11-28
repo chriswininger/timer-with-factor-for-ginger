@@ -17,12 +17,15 @@ function main(window) {
   const timeOutput = document.getElementById('time-output');
   const multipliedOutputEl = document.getElementById('multiplied-output');
   const errorTextEl = document.getElementById('error-text');
+  const factorEl = document.getElementById('factor');
 
   let factor = getFactor();
 
-  startStopButton.addEventListener('click', function() {
+  factorEl.addEventListener('input', function() {
     factor = getFactor();
+  });
 
+  startStopButton.addEventListener('click', function() {
     if (isRunning) {
       // stop
       clearTimer();
@@ -62,7 +65,6 @@ function main(window) {
   }
 
   function getFactor() {
-    const factorEl = document.getElementById('factor');
     return parseFloat(factorEl.value.trim())
   }
 }
