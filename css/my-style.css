@@ -1,0 +1,48 @@
+body {
+  max-width: 900px;
+  margin: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+}
+
+#timer-main-content {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+#output-section {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+   margin-bottom: 1rem;
+}
+
+#button-area {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  margin-top: 1rem;
+}
+
+.output-section-entry {
+  min-width: 10em;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  margin-right: 1rem;
+}
